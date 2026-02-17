@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import useFadeUp from "../hooks/useFadeUp";
 import PageHero from "../components/PageHero";
-import "./Smm.css";
+import "../styles/Smm.css";
 
 // ════════════════════════════════════════════════════════════════
 //  DATA — sourced from thenextgenacademy.co.in/social-media-marketing-smm/
@@ -178,17 +178,6 @@ export default function SmmPage() {
 
   return (
     <>
-      {/* ── PageHero — untouched ─────────────────────────── */}
-      <PageHero
-        label="Social Media Marketing"
-        title={
-          <>
-            Best SMM Course in<br />
-            <span className="grad-text">Thane &amp; Mumbai</span>
-          </>
-        }
-        sub="Unlock the power of social media to grow your brand. Master Instagram, Facebook, LinkedIn, and more — with hands-on projects, internship, and placement support."
-      />
 
       {/* ════════════════════════════════════════════════════
           SECTION 1 — Intro + Platforms + Stats
