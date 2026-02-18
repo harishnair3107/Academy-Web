@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import useFadeUp from "../hooks/useFadeUp";
 import PageHero from "../components/PageHero";
-import "./Wordpress.css";
+import "../styles/Wordpress.css";
 
 // ════════════════════════════════════════════════════════════════
 //  DATA — sourced from thenextgenacademy.co.in/wordpress-website-creation/
@@ -165,18 +165,6 @@ export default function WordpressPage() {
 
   return (
     <>
-      {/* ── PageHero — untouched ─────────────────────────── */}
-      <PageHero
-        label="WordPress — Website Creation"
-        title={
-          <>
-            Build &amp; Customize Websites<br />
-            <span className="grad-text">with WordPress</span>
-          </>
-        }
-        sub="Learn to build and customize websites with WordPress — step-by-step WordPress training for beginners. No coding required."
-      />
-
       {/* ════════════════════════════════════════════════════
           SECTION 1 — Intro + Stats
       ════════════════════════════════════════════════════ */}
