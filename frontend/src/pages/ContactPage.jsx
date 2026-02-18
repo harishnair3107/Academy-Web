@@ -15,10 +15,11 @@ export default function ContactPage() {
 
   return (
     <>
-      <PageHero 
-        label="Get in Touch" 
-        title={<>We're Here to<br /><span className="grad-text">Help You</span></>} 
-        sub="Have a question about our courses? Want to know which program fits your goals? Reach out — our counsellors respond within 2 hours." 
+      <PageHero
+        showOrbs={false}
+        label="Get in Touch"
+        title={<>We're Here to<br /><span className="grad-text">Help You</span></>}
+        sub="Have a question about our courses? Want to know which program fits your goals? Reach out — our counsellors respond within 2 hours."
       />
 
       <section>
@@ -104,9 +105,9 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <button 
-                  className="btn-primary" 
-                  type="submit" 
+                <button
+                  className="btn-primary"
+                  type="submit"
                   style={{ marginTop: 20, width: "100%", fontSize: "1rem", padding: "16px" }}
                 >
                   Send Message & Book Counselling

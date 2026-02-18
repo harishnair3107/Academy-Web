@@ -22,10 +22,11 @@ export default function AdmissionPage() {
 
   return (
     <>
-      <PageHero 
-        label="Admission Form" 
-        title={<>Secure Your <span className="grad-text">Seat Today</span></>} 
-        sub="Fill in the admission form below. Our team will confirm your enrollment and share batch details within 24 hours." 
+      <PageHero
+        showOrbs={false}
+        label="Admission Form"
+        title={<>Secure Your <span className="grad-text">Seat Today</span></>}
+        sub="Fill in the admission form below. Our team will confirm your enrollment and share batch details within 24 hours."
       />
 
       <section>

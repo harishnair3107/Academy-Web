@@ -13,6 +13,8 @@ export default function HomePage() {
       <section className="home-hero grid-bg">
         <div className="hero-orb orb-1" />
         <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
         <div className="hero-grid">
           <div>
             <div className="badge" style={{ marginBottom: 22 }}>
@@ -58,13 +60,13 @@ export default function HomePage() {
           </div>
           <div className="courses-grid">
             {COURSES_DATA.slice(0, 3).map((c, i) => (
-               <CourseCard
-                              key={c.id}
-                              course={c}
-                              index={i}
-                              fade={fade}
-                              onClick={go}
-                              />
+              <CourseCard
+                key={c.id}
+                course={c}
+                index={i}
+                fade={fade}
+                onClick={go}
+              />
             ))}
           </div>
           <div style={{ textAlign: "center", marginTop: 36 }}>

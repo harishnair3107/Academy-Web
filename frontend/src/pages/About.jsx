@@ -86,9 +86,9 @@ export default function AboutPage() {
 
   const stats = [
     { v: "2500+", k: "Students Trained", c: "#00e5ff" },
-    { v: "100%",  k: "Internship Rate",  c: "#ffab00" },
-    { v: "50+",   k: "Hiring Partners",  c: "#ff6d00" },
-    { v: "7 yrs", k: "In Operation",     c: "#00e5ff" },
+    { v: "100%", k: "Internship Rate", c: "#ffab00" },
+    { v: "50+", k: "Hiring Partners", c: "#ff6d00" },
+    { v: "7 yrs", k: "In Operation", c: "#00e5ff" },
   ];
 
   return (
@@ -97,7 +97,11 @@ export default function AboutPage() {
       {/* ═══════════════════════════════════════════════════════
           SECTION 1 — Welcome + Stats
       ═══════════════════════════════════════════════════════ */}
-      <section style={{ padding: "96px 5%", background: "var(--navy)" }}>
+      <section style={{ padding: "96px 5%", background: "var(--navy)", position: "relative", overflow: "hidden" }}>
+        <div className="hero-orb orb-1" />
+        <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
         <div className="max-w" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center" }}>
 
           {/* Left — copy */}

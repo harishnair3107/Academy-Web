@@ -661,26 +661,47 @@ footer {
 .hero-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
   pointer-events: none;
+  opacity: 0.15;
 }
 
 .orb-1 {
   width: 520px;
   height: 520px;
-  background: rgba(0, 229, 255, .065);
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--amber) 100%);
   top: -120px;
   right: -120px;
   animation: floatOrb 8s ease-in-out infinite;
 }
 
+
 .orb-2 {
   width: 420px;
   height: 420px;
-  background: rgba(255, 171, 0, .055);
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--amber) 100%);
   bottom: -60px;
   left: -90px;
   animation: floatOrb 11s ease-in-out infinite reverse;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--amber) 100%);
+  top: 40%;
+  left: 20%;
+  animation: floatOrb 9s ease-in-out infinite;
+  opacity: 0.1;
+}
+
+.orb-4 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--amber) 100%);
+  bottom: 20%;
+  right: 10%;
+  animation: floatOrb 13s ease-in-out infinite reverse;
+  opacity: 0.1;
 }
 
 .hero-grid {

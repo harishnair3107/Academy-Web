@@ -10,11 +10,11 @@ import '../styles/DigitalMarketing.css'
 
 // Sub-courses quick links (from digital-marketing-course-with-placement)
 const SUB_COURSES = [
-  { icon: "🔍", title: "Search Engine Optimization (SEO)",    route: "/seo",            accent: "cyan"  },
-  { icon: "📲", title: "Social Media Marketing (SMM)",        route: "/social-media",   accent: "amber" },
-  { icon: "📣", title: "Lead Generation",                     route: "/contact",        accent: "hot"   },
-  { icon: "📈", title: "Google Ads",                          route: "/google-ads",     accent: "cyan"  },
-  { icon: "🌐", title: "WordPress Website Creation",          route: "/wordpress",      accent: "amber" },
+  { icon: "🔍", title: "Search Engine Optimization (SEO)", route: "/seo", accent: "cyan" },
+  { icon: "📲", title: "Social Media Marketing (SMM)", route: "/social-media", accent: "amber" },
+  { icon: "📣", title: "Lead Generation", route: "/contact", accent: "hot" },
+  { icon: "📈", title: "Google Ads", route: "/google-ads", accent: "cyan" },
+  { icon: "🌐", title: "WordPress Website Creation", route: "/wordpress", accent: "amber" },
 ];
 
 // Beginner → Pro levels (from from-beginner-to-pro page)
@@ -232,7 +232,11 @@ export default function DigitalMarketingPage() {
       {/* ════════════════════════════════════════════════════
           SECTION 1 — Intro + Sub-course quick links
       ════════════════════════════════════════════════════ */}
-      <section className="dm-section dm-section--dark grid-bg">
+      <section className="dm-section dm-section--dark grid-bg" style={{ position: "relative", overflow: "hidden" }}>
+        <div className="hero-orb orb-1" />
+        <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
         <div className="max-w">
           <div className="dm-intro-layout">
 

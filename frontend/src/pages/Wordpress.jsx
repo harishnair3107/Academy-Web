@@ -134,14 +134,14 @@ const TOOLS = [
 
 // Career roles
 const CAREER_ROLES = [
-  { name: "WordPress Developer",        pay: "₹3–6 LPA" },
-  { name: "WordPress Designer",         pay: "₹2.5–5 LPA" },
-  { name: "Freelance Website Builder",  pay: "₹15k–50k/site" },
-  { name: "Web Content Manager",        pay: "₹3–5 LPA" },
-  { name: "WooCommerce Specialist",     pay: "₹3.5–7 LPA" },
-  { name: "Digital Marketing Executive",pay: "₹3–6 LPA" },
-  { name: "Website Maintenance Tech",   pay: "₹2–4 LPA" },
-  { name: "Full-Stack WordPress Dev",   pay: "₹5–10 LPA" },
+  { name: "WordPress Developer", pay: "₹3–6 LPA" },
+  { name: "WordPress Designer", pay: "₹2.5–5 LPA" },
+  { name: "Freelance Website Builder", pay: "₹15k–50k/site" },
+  { name: "Web Content Manager", pay: "₹3–5 LPA" },
+  { name: "WooCommerce Specialist", pay: "₹3.5–7 LPA" },
+  { name: "Digital Marketing Executive", pay: "₹3–6 LPA" },
+  { name: "Website Maintenance Tech", pay: "₹2–4 LPA" },
+  { name: "Full-Stack WordPress Dev", pay: "₹5–10 LPA" },
 ];
 
 // Who should join
@@ -168,7 +168,11 @@ export default function WordpressPage() {
       {/* ════════════════════════════════════════════════════
           SECTION 1 — Intro + Stats
       ════════════════════════════════════════════════════ */}
-      <section className="wp-section wp-section--dark grid-bg">
+      <section className="wp-section wp-section--dark grid-bg" style={{ position: "relative", overflow: "hidden" }}>
+        <div className="hero-orb orb-1" />
+        <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
         <div className="max-w">
           <div className="wp-intro-layout">
 
@@ -218,12 +222,12 @@ export default function WordpressPage() {
               </div>
               <div className="wp-stat-strip">
                 {[
-                  { num: "1 Mo",  label: "Course Duration", bar: "cyan",  cls: "cyan"  },
-                  { num: "₹7k",   label: "Course Fee",      bar: "amber", cls: "amber" },
-                  { num: "100%",  label: "Internship Rate", bar: "hot",   cls: "hot"   },
-                  { num: "6",     label: "Core Modules",    bar: "cyan",  cls: "cyan"  },
-                  { num: "12+",   label: "Tools Covered",   bar: "amber", cls: "amber" },
-                  { num: "50+",   label: "Hiring Partners", bar: "hot",   cls: "hot"   },
+                  { num: "1 Mo", label: "Course Duration", bar: "cyan", cls: "cyan" },
+                  { num: "₹7k", label: "Course Fee", bar: "amber", cls: "amber" },
+                  { num: "100%", label: "Internship Rate", bar: "hot", cls: "hot" },
+                  { num: "6", label: "Core Modules", bar: "cyan", cls: "cyan" },
+                  { num: "12+", label: "Tools Covered", bar: "amber", cls: "amber" },
+                  { num: "50+", label: "Hiring Partners", bar: "hot", cls: "hot" },
                 ].map((s, i) => (
                   <div
                     className={`wp-stat-box wp-delay-${i} fade-up`}

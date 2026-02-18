@@ -128,13 +128,13 @@ const TOOLS = [
 
 // Career outcomes with salary ranges
 const CAREER_ROLES = [
-  { name: "Google Ads Specialist",      pay: "₹3–6 LPA" },
-  { name: "PPC Manager",                pay: "₹4–8 LPA" },
-  { name: "Paid Search Analyst",        pay: "₹3–6 LPA" },
-  { name: "Performance Marketer",       pay: "₹4–9 LPA" },
-  { name: "Media Buyer",                pay: "₹3.5–7 LPA" },
-  { name: "Digital Marketing Manager",  pay: "₹5–12 LPA" },
-  { name: "E-commerce Ads Manager",     pay: "₹4–8 LPA" },
+  { name: "Google Ads Specialist", pay: "₹3–6 LPA" },
+  { name: "PPC Manager", pay: "₹4–8 LPA" },
+  { name: "Paid Search Analyst", pay: "₹3–6 LPA" },
+  { name: "Performance Marketer", pay: "₹4–9 LPA" },
+  { name: "Media Buyer", pay: "₹3.5–7 LPA" },
+  { name: "Digital Marketing Manager", pay: "₹5–12 LPA" },
+  { name: "E-commerce Ads Manager", pay: "₹4–8 LPA" },
   { name: "Freelance Google Ads Expert", pay: "₹40k–1.5L/mo" },
 ];
 
@@ -168,12 +168,17 @@ export default function GoogleAdsPage() {
 
   return (
     <>
-      
+
 
       {/* ════════════════════════════════════════════════════
           SECTION 1 — Intro + Stats
       ════════════════════════════════════════════════════ */}
-      <section className="ga-section ga-section--dark grid-bg">
+      <section className="ga-section ga-section--dark grid-bg" style={{ position: "relative", overflow: "hidden" }}>
+        <div className="hero-orb orb-1" />
+        <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
+
         <div className="max-w">
           <div className="ga-intro-layout">
 
@@ -216,12 +221,12 @@ export default function GoogleAdsPage() {
               <div className="sec-label fade-up" ref={fade}>// Course at a Glance</div>
               <div className="ga-stat-strip">
                 {[
-                  { num: "6 Wk",  label: "Course Duration",  bar: "cyan",  cls: "cyan"  },
-                  { num: "₹10k",  label: "Course Fee",        bar: "amber", cls: "amber" },
-                  { num: "100%",  label: "Internship Rate",   bar: "hot",   cls: "hot"   },
-                  { num: "5",     label: "Core Modules",      bar: "cyan",  cls: "cyan"  },
-                  { num: "12+",   label: "Tools Covered",     bar: "amber", cls: "amber" },
-                  { num: "5",     label: "Certifications",    bar: "hot",   cls: "hot"   },
+                  { num: "6 Wk", label: "Course Duration", bar: "cyan", cls: "cyan" },
+                  { num: "₹10k", label: "Course Fee", bar: "amber", cls: "amber" },
+                  { num: "100%", label: "Internship Rate", bar: "hot", cls: "hot" },
+                  { num: "5", label: "Core Modules", bar: "cyan", cls: "cyan" },
+                  { num: "12+", label: "Tools Covered", bar: "amber", cls: "amber" },
+                  { num: "5", label: "Certifications", bar: "hot", cls: "hot" },
                 ].map((s, i) => (
                   <div
                     className={`ga-stat-box ga-delay-${i} fade-up`}

@@ -10,10 +10,11 @@ export default function TestimonialsPage() {
 
   return (
     <>
-      <PageHero 
-        label="Student Stories" 
-        title={<>Real Results from<br /><span className="grad-text">Real Students</span></>} 
-        sub="Over 2500 students trained. Here's what they say about their journey at NextGen Academy — in their own words." 
+      <PageHero
+        showOrbs={false}
+        label="Student Stories"
+        title={<>Real Results from<br /><span className="grad-text">Real Students</span></>}
+        sub="Over 2500 students trained. Here's what they say about their journey at NextGen Academy — in their own words."
       />
 
       <section>

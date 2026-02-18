@@ -115,14 +115,14 @@ const TOOLS = [
 ];
 
 const CAREER_ROLES = [
-  { name: "SEO Specialist",            pay: "₹3–6 LPA" },
-  { name: "SEO Analyst",               pay: "₹2.5–5 LPA" },
-  { name: "SEO Manager",               pay: "₹5–10 LPA" },
-  { name: "Content SEO Strategist",    pay: "₹3–7 LPA" },
-  { name: "Technical SEO Engineer",    pay: "₹4–9 LPA" },
+  { name: "SEO Specialist", pay: "₹3–6 LPA" },
+  { name: "SEO Analyst", pay: "₹2.5–5 LPA" },
+  { name: "SEO Manager", pay: "₹5–10 LPA" },
+  { name: "Content SEO Strategist", pay: "₹3–7 LPA" },
+  { name: "Technical SEO Engineer", pay: "₹4–9 LPA" },
   { name: "Digital Marketing Manager", pay: "₹5–12 LPA" },
-  { name: "Freelance SEO Consultant",  pay: "₹30k–1L/mo" },
-  { name: "Growth Hacker",             pay: "₹4–8 LPA" },
+  { name: "Freelance SEO Consultant", pay: "₹30k–1L/mo" },
+  { name: "Growth Hacker", pay: "₹4–8 LPA" },
 ];
 
 const WHO_SHOULD_JOIN = [
@@ -148,7 +148,11 @@ export default function SEOPage() {
       {/* ════════════════════════════════════════════════════
           SECTION 1 — What is SEO + Stats
       ════════════════════════════════════════════════════ */}
-      <section className="seo-section seo-section--dark grid-bg">
+      <section className="seo-section seo-section--dark grid-bg" style={{ position: "relative", overflow: "hidden" }}>
+        <div className="hero-orb orb-1" />
+        <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
         <div className="max-w">
           <div className="seo-intro-layout">
 
@@ -194,12 +198,12 @@ export default function SEOPage() {
               <div className="sec-label fade-up" ref={fade}>// Course at a Glance</div>
               <div className="seo-stat-strip fade-up" ref={fade}>
                 {[
-                  { num: "2 Mo",  label: "Course Duration",   bar: "",       cls: "cyan"  },
-                  { num: "₹12k",  label: "Course Fee",        bar: "amber",  cls: "amber" },
-                  { num: "100%",  label: "Internship Rate",   bar: "hot",    cls: "hot"   },
-                  { num: "6",     label: "Core Modules",      bar: "",       cls: "cyan"  },
-                  { num: "12+",   label: "Tools Covered",     bar: "amber",  cls: "amber" },
-                  { num: "50+",   label: "Hiring Partners",   bar: "hot",    cls: "hot"   },
+                  { num: "2 Mo", label: "Course Duration", bar: "", cls: "cyan" },
+                  { num: "₹12k", label: "Course Fee", bar: "amber", cls: "amber" },
+                  { num: "100%", label: "Internship Rate", bar: "hot", cls: "hot" },
+                  { num: "6", label: "Core Modules", bar: "", cls: "cyan" },
+                  { num: "12+", label: "Tools Covered", bar: "amber", cls: "amber" },
+                  { num: "50+", label: "Hiring Partners", bar: "hot", cls: "hot" },
                 ].map((s, i) => (
                   <div
                     className={`seo-stat-box seo-delay-${i} fade-up`}

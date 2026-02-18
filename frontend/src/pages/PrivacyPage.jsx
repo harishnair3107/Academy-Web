@@ -1,4 +1,3 @@
-import PageHero from "../components/PageHero";
 
 
 // ── Table of Contents data ────────────────────────────────────
@@ -19,7 +18,11 @@ export default function PrivacyPage() {
   return (
     <>
 
-      <section>
+      <section style={{ position: "relative", overflow: "hidden" }}>
+        <div className="hero-orb orb-1" />
+        <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
         <p>Your Privacy <span className="grad-text">Matters</span></p>
         <div className="privacy-wrapper">
 

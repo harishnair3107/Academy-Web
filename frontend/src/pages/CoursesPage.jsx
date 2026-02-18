@@ -4,35 +4,36 @@ import { COURSES_DATA } from "../data/courses";
 import PageHero from "../components/PageHero";
 import CourseCard from "../components/CourseCard";
 export default function CoursesPage() {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const go = (p) => { navigate(p); window.scrollTo({ top: 0, behavior: "smooth" }); };
   const fade = useFadeUp();
 
   return (
     <>
-      <PageHero 
-        label="All Programs" 
-        title={<>Courses Built for<br /><span className="grad-text">Real-World Success</span></>} 
-        sub="Every course is designed with industry input. Learn tools professionals actually use, then apply them in live projects with guaranteed internship support." 
+      <PageHero
+        showOrbs={false}
+        label="All Programs"
+        title={<>Courses Built for<br /><span className="grad-text">Real-World Success</span></>}
+        sub="Every course is designed with industry input. Learn tools professionals actually use, then apply them in live projects with guaranteed internship support."
       />
 
       <section>
         <div className="max-w">
           <div className="courses-grid">
-    
+
             {COURSES_DATA.map((c, i) => (
-                <CourseCard
+              <CourseCard
                 key={c.id}
                 course={c}
                 index={i}
                 fade={fade}
                 onClick={go}
-                />
+              />
 
             ))}
-        </div>
+          </div>
 
-        
+
 
           <div className="card fade-up" ref={fade} style={{ marginTop: 40, textAlign: "center", padding: 40 }}>
             <div className="card-top-bar" />

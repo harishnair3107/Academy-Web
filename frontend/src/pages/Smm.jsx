@@ -9,12 +9,12 @@ import "../styles/Smm.css";
 
 // Social media platforms covered
 const PLATFORMS_BADGES = [
-  { label: "Instagram",  icon: "📸", variant: "instagram" },
-  { label: "Facebook",   icon: "📘", variant: "facebook"  },
-  { label: "LinkedIn",   icon: "💼", variant: "linkedin"  },
-  { label: "YouTube",    icon: "▶️", variant: "youtube"   },
-  { label: "X (Twitter)",icon: "🐦", variant: "twitter"   },
-  { label: "Pinterest",  icon: "📌", variant: "pinterest" },
+  { label: "Instagram", icon: "📸", variant: "instagram" },
+  { label: "Facebook", icon: "📘", variant: "facebook" },
+  { label: "LinkedIn", icon: "💼", variant: "linkedin" },
+  { label: "YouTube", icon: "▶️", variant: "youtube" },
+  { label: "X (Twitter)", icon: "🐦", variant: "twitter" },
+  { label: "Pinterest", icon: "📌", variant: "pinterest" },
 ];
 
 // What You'll Learn — 5 modules (from the site's image titles)
@@ -147,14 +147,14 @@ const TOOLS = [
 
 // Career roles
 const CAREER_ROLES = [
-  { name: "Social Media Manager",          pay: "₹3–6 LPA"     },
-  { name: "Social Media Strategist",       pay: "₹4–8 LPA"     },
-  { name: "Content Creator",               pay: "₹2.5–5 LPA"   },
-  { name: "Community Manager",             pay: "₹3–5.5 LPA"   },
-  { name: "Performance Marketing Manager", pay: "₹4–9 LPA"     },
-  { name: "Digital Marketing Executive",   pay: "₹3–6 LPA"     },
-  { name: "Brand Manager",                 pay: "₹5–12 LPA"    },
-  { name: "Freelance SMM Consultant",      pay: "₹30k–1L/mo"   },
+  { name: "Social Media Manager", pay: "₹3–6 LPA" },
+  { name: "Social Media Strategist", pay: "₹4–8 LPA" },
+  { name: "Content Creator", pay: "₹2.5–5 LPA" },
+  { name: "Community Manager", pay: "₹3–5.5 LPA" },
+  { name: "Performance Marketing Manager", pay: "₹4–9 LPA" },
+  { name: "Digital Marketing Executive", pay: "₹3–6 LPA" },
+  { name: "Brand Manager", pay: "₹5–12 LPA" },
+  { name: "Freelance SMM Consultant", pay: "₹30k–1L/mo" },
 ];
 
 // Who should join
@@ -182,7 +182,11 @@ export default function SmmPage() {
       {/* ════════════════════════════════════════════════════
           SECTION 1 — Intro + Platforms + Stats
       ════════════════════════════════════════════════════ */}
-      <section className="smm-section smm-section--dark grid-bg">
+      <section className="smm-section smm-section--dark grid-bg" style={{ position: "relative", overflow: "hidden" }}>
+        <div className="hero-orb orb-1" />
+        <div className="hero-orb orb-2" />
+        <div className="hero-orb orb-3" />
+        <div className="hero-orb orb-4" />
         <div className="max-w">
           <div className="smm-intro-layout">
 
@@ -244,12 +248,12 @@ export default function SmmPage() {
               <div className="sec-label fade-up" ref={fade}>// Course at a Glance</div>
               <div className="smm-stat-strip">
                 {[
-                  { num: "2 Mo",  label: "Course Duration",  bar: "purple", cls: "purple" },
-                  { num: "₹10k",  label: "Course Fee",        bar: "cyan",   cls: "cyan"   },
-                  { num: "100%",  label: "Internship Rate",   bar: "amber",  cls: "amber"  },
-                  { num: "5",     label: "Core Modules",      bar: "hot",    cls: "amber"  },
-                  { num: "6+",    label: "Platforms Covered", bar: "purple", cls: "purple" },
-                  { num: "50+",   label: "Hiring Partners",   bar: "cyan",   cls: "cyan"   },
+                  { num: "2 Mo", label: "Course Duration", bar: "purple", cls: "purple" },
+                  { num: "₹10k", label: "Course Fee", bar: "cyan", cls: "cyan" },
+                  { num: "100%", label: "Internship Rate", bar: "amber", cls: "amber" },
+                  { num: "5", label: "Core Modules", bar: "hot", cls: "amber" },
+                  { num: "6+", label: "Platforms Covered", bar: "purple", cls: "purple" },
+                  { num: "50+", label: "Hiring Partners", bar: "cyan", cls: "cyan" },
                 ].map((s, i) => (
                   <div
                     className={`smm-stat-box smm-delay-${i} fade-up`}
