@@ -107,7 +107,7 @@
 }
 
 .wp-stat-num {
-  font-family: "Space Mono", monospace;
+ font-family: "Inter", sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1;
@@ -173,7 +173,7 @@
 }
 
 .wp-learn-num {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.88rem;
   font-weight: 700;
   color: var(--cyan);
@@ -188,7 +188,7 @@
 
 
 .wp-learn-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.97rem;
   font-weight: 700;
   color: var(--white);
@@ -307,7 +307,7 @@
 }
 
 .wp-feature-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.3px;
@@ -404,7 +404,7 @@
 }
 
 .wp-why-content h4 {
-  font-family: "Space Mono", monospace;
+ font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--white);
@@ -510,7 +510,7 @@
 
 .wp-career-pay {
   margin-left: auto;
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   color: var(--amber);
   font-weight: 700;
@@ -585,7 +585,7 @@
 }
 
 .wp-cta-title {
-  font-family: "Space Mono", monospace;
+ font-family: "Inter", sans-serif;
   font-size: clamp(1.9rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -1.5px;

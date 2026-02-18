@@ -73,12 +73,23 @@
   flex-shrink: 0;
 }
 
-.dm-subcourse-icon-wrap--cyan   { background: rgba(0,229,255,0.1);  border: 1px solid rgba(0,229,255,0.2);  }
-.dm-subcourse-icon-wrap--amber  { background: rgba(255,171,0,0.1);  border: 1px solid rgba(255,171,0,0.2);  }
-.dm-subcourse-icon-wrap--hot    { background: rgba(255,109,0,0.1);  border: 1px solid rgba(255,109,0,0.2);  }
+.dm-subcourse-icon-wrap--cyan {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.dm-subcourse-icon-wrap--amber {
+  background: rgba(255, 171, 0, 0.1);
+  border: 1px solid rgba(255, 171, 0, 0.2);
+}
+
+.dm-subcourse-icon-wrap--hot {
+  background: rgba(255, 109, 0, 0.1);
+  border: 1px solid rgba(255, 109, 0, 0.2);
+}
 
 .dm-subcourse-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--white);
@@ -92,9 +103,17 @@
   transition: color 0.2s;
 }
 
-.dm-subcourse-arrow--cyan  { color: var(--cyan); }
-.dm-subcourse-arrow--amber { color: var(--amber); }
-.dm-subcourse-arrow--hot   { color: var(--hot); }
+.dm-subcourse-arrow--cyan {
+  color: var(--cyan);
+}
+
+.dm-subcourse-arrow--amber {
+  color: var(--amber);
+}
+
+.dm-subcourse-arrow--hot {
+  color: var(--hot);
+}
 
 /* ════════════════════════════════════════════════════════════
    SECTION 2 — Beginner to Pro levels
@@ -110,7 +129,7 @@
 .dm-level-tab {
   padding: 10px 22px;
   border-radius: 8px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   border: 1px solid var(--border);
@@ -153,8 +172,15 @@
 }
 
 @keyframes dmFadeIn {
-  from { opacity: 0; transform: translateY(14px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .dm-level-meta {
@@ -176,18 +202,32 @@
   text-transform: uppercase;
 }
 
-.dm-level-badge--beginner    { background: rgba(0,229,255,0.1);  color: var(--cyan);  border: 1px solid rgba(0,229,255,0.2);  }
-.dm-level-badge--intermediate{ background: rgba(255,171,0,0.1);  color: var(--amber); border: 1px solid rgba(255,171,0,0.2);  }
-.dm-level-badge--advanced    { background: rgba(255,109,0,0.1);  color: var(--hot);   border: 1px solid rgba(255,109,0,0.2);  }
+.dm-level-badge--beginner {
+  background: rgba(0, 229, 255, 0.1);
+  color: var(--cyan);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.dm-level-badge--intermediate {
+  background: rgba(255, 171, 0, 0.1);
+  color: var(--amber);
+  border: 1px solid rgba(255, 171, 0, 0.2);
+}
+
+.dm-level-badge--advanced {
+  background: rgba(255, 109, 0, 0.1);
+  color: var(--hot);
+  border: 1px solid rgba(255, 109, 0, 0.2);
+}
 
 .dm-level-num {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.72rem;
   color: var(--muted);
 }
 
 .dm-level-headline {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: -0.6px;
@@ -227,9 +267,17 @@
   transform: translateX(5px);
 }
 
-.dm-course-item--beginner:hover    { border-color: rgba(0,229,255,0.3);   }
-.dm-course-item--intermediate:hover{ border-color: rgba(255,171,0,0.3);   }
-.dm-course-item--advanced:hover    { border-color: rgba(255,109,0,0.3);   }
+.dm-course-item--beginner:hover {
+  border-color: rgba(0, 229, 255, 0.3);
+}
+
+.dm-course-item--intermediate:hover {
+  border-color: rgba(255, 171, 0, 0.3);
+}
+
+.dm-course-item--advanced:hover {
+  border-color: rgba(255, 109, 0, 0.3);
+}
 
 .dm-course-item-head {
   display: flex;
@@ -245,12 +293,23 @@
   flex-shrink: 0;
 }
 
-.dm-course-item-dot--cyan  { background: var(--cyan);  box-shadow: 0 0 8px rgba(0,229,255,0.5);  }
-.dm-course-item-dot--amber { background: var(--amber); box-shadow: 0 0 8px rgba(255,171,0,0.5);  }
-.dm-course-item-dot--hot   { background: var(--hot);   box-shadow: 0 0 8px rgba(255,109,0,0.5);  }
+.dm-course-item-dot--cyan {
+  background: var(--cyan);
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+}
+
+.dm-course-item-dot--amber {
+  background: var(--amber);
+  box-shadow: 0 0 8px rgba(255, 171, 0, 0.5);
+}
+
+.dm-course-item-dot--hot {
+  background: var(--hot);
+  box-shadow: 0 0 8px rgba(255, 109, 0, 0.5);
+}
 
 .dm-course-item-name {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--white);
@@ -342,7 +401,7 @@
 }
 
 .dm-step-num {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.88rem;
   font-weight: 700;
   color: var(--cyan);
@@ -351,7 +410,7 @@
 
 
 .dm-step-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--white);
@@ -416,13 +475,23 @@
 
 .dm-practical-bar {
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 3px;
 }
 
-.dm-practical-bar--cyan  { background: linear-gradient(90deg, var(--cyan), var(--cyan-dim)); }
-.dm-practical-bar--amber { background: linear-gradient(90deg, var(--amber), #e65c00); }
-.dm-practical-bar--hot   { background: linear-gradient(90deg, var(--hot), var(--amber)); }
+.dm-practical-bar--cyan {
+  background: linear-gradient(90deg, var(--cyan), var(--cyan-dim));
+}
+
+.dm-practical-bar--amber {
+  background: linear-gradient(90deg, var(--amber), #e65c00);
+}
+
+.dm-practical-bar--hot {
+  background: linear-gradient(90deg, var(--hot), var(--amber));
+}
 
 .dm-practical-icon {
   font-size: 1.8rem;
@@ -431,7 +500,7 @@
 }
 
 .dm-practical-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--white);
@@ -471,8 +540,13 @@
   transform: translateY(-4px);
 }
 
-.dm-eval-card--cyan:hover  { border-color: rgba(0,229,255,0.3); }
-.dm-eval-card--amber:hover { border-color: rgba(255,171,0,0.3); }
+.dm-eval-card--cyan:hover {
+  border-color: rgba(0, 229, 255, 0.3);
+}
+
+.dm-eval-card--amber:hover {
+  border-color: rgba(255, 171, 0, 0.3);
+}
 
 .dm-eval-head {
   display: flex;
@@ -492,11 +566,18 @@
   flex-shrink: 0;
 }
 
-.dm-eval-icon--cyan  { background: rgba(0,229,255,0.1);  border: 1px solid rgba(0,229,255,0.2);  }
-.dm-eval-icon--amber { background: rgba(255,171,0,0.1);  border: 1px solid rgba(255,171,0,0.2);  }
+.dm-eval-icon--cyan {
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+}
+
+.dm-eval-icon--amber {
+  background: rgba(255, 171, 0, 0.1);
+  border: 1px solid rgba(255, 171, 0, 0.2);
+}
 
 .dm-eval-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--white);
@@ -529,8 +610,13 @@
   margin-top: 2px;
 }
 
-.dm-eval-points--cyan li::before  { color: var(--cyan); }
-.dm-eval-points--amber li::before { color: var(--amber); }
+.dm-eval-points--cyan li::before {
+  color: var(--cyan);
+}
+
+.dm-eval-points--amber li::before {
+  color: var(--amber);
+}
 
 /* ════════════════════════════════════════════════════════════
    SECTION 6 — Reviews & Testimonials callout bar
@@ -565,7 +651,7 @@
 }
 
 .dm-review-headline {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.3rem, 2.5vw, 1.9rem);
   font-weight: 700;
   letter-spacing: -0.8px;
@@ -593,12 +679,12 @@
 .dm-cta-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 65% 55% at 50% 50%, rgba(0,229,255,0.05), transparent);
+  background: radial-gradient(ellipse 65% 55% at 50% 50%, rgba(0, 229, 255, 0.05), transparent);
   pointer-events: none;
 }
 
 .dm-cta-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.9rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -1.5px;
@@ -628,27 +714,77 @@
 }
 
 /* ── Stagger delay classes ── */
-.dm-subcourse-card--delay-0 { transition-delay: 0ms;   }
-.dm-subcourse-card--delay-1 { transition-delay: 70ms;  }
-.dm-subcourse-card--delay-2 { transition-delay: 140ms; }
-.dm-subcourse-card--delay-3 { transition-delay: 210ms; }
-.dm-subcourse-card--delay-4 { transition-delay: 280ms; }
+.dm-subcourse-card--delay-0 {
+  transition-delay: 0ms;
+}
 
-.dm-practical-card--delay-0 { transition-delay: 0ms;   }
-.dm-practical-card--delay-1 { transition-delay: 75ms;  }
-.dm-practical-card--delay-2 { transition-delay: 150ms; }
-.dm-practical-card--delay-3 { transition-delay: 225ms; }
+.dm-subcourse-card--delay-1 {
+  transition-delay: 70ms;
+}
 
-.dm-step-card--delay-0 { transition-delay: 0ms;   }
-.dm-step-card--delay-1 { transition-delay: 55ms;  }
-.dm-step-card--delay-2 { transition-delay: 110ms; }
-.dm-step-card--delay-3 { transition-delay: 165ms; }
-.dm-step-card--delay-4 { transition-delay: 220ms; }
-.dm-step-card--delay-5 { transition-delay: 275ms; }
-.dm-step-card--delay-6 { transition-delay: 330ms; }
+.dm-subcourse-card--delay-2 {
+  transition-delay: 140ms;
+}
 
-.dm-eval-card--delay-0 { transition-delay: 0ms;  }
-.dm-eval-card--delay-1 { transition-delay: 90ms; }
+.dm-subcourse-card--delay-3 {
+  transition-delay: 210ms;
+}
+
+.dm-subcourse-card--delay-4 {
+  transition-delay: 280ms;
+}
+
+.dm-practical-card--delay-0 {
+  transition-delay: 0ms;
+}
+
+.dm-practical-card--delay-1 {
+  transition-delay: 75ms;
+}
+
+.dm-practical-card--delay-2 {
+  transition-delay: 150ms;
+}
+
+.dm-practical-card--delay-3 {
+  transition-delay: 225ms;
+}
+
+.dm-step-card--delay-0 {
+  transition-delay: 0ms;
+}
+
+.dm-step-card--delay-1 {
+  transition-delay: 55ms;
+}
+
+.dm-step-card--delay-2 {
+  transition-delay: 110ms;
+}
+
+.dm-step-card--delay-3 {
+  transition-delay: 165ms;
+}
+
+.dm-step-card--delay-4 {
+  transition-delay: 220ms;
+}
+
+.dm-step-card--delay-5 {
+  transition-delay: 275ms;
+}
+
+.dm-step-card--delay-6 {
+  transition-delay: 330ms;
+}
+
+.dm-eval-card--delay-0 {
+  transition-delay: 0ms;
+}
+
+.dm-eval-card--delay-1 {
+  transition-delay: 90ms;
+}
 
 /* ── Guide highlight with bottom margin ── */
 .dm-guide-highlight--spaced {
@@ -670,6 +806,7 @@
 
 /* ── Responsive ── */
 @media (max-width: 960px) {
+
   .dm-intro-layout,
   .dm-level-panel,
   .dm-guide-layout,
@@ -701,4 +838,3 @@
     font-size: 0.82rem;
   }
 }
-

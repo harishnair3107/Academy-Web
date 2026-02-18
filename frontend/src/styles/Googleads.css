@@ -54,8 +54,17 @@
 }
 
 @keyframes gaPulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.4; transform: scale(0.75); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(0.75);
+  }
 }
 
 .ga-intro-body {
@@ -98,25 +107,43 @@
 
 .ga-stat-box-bar {
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 3px;
 }
 
-.ga-stat-box-bar--cyan  { background: linear-gradient(90deg, var(--cyan), var(--cyan-dim)); }
-.ga-stat-box-bar--amber { background: linear-gradient(90deg, var(--amber), #e65c00); }
-.ga-stat-box-bar--hot   { background: linear-gradient(90deg, var(--hot), var(--amber)); }
+.ga-stat-box-bar--cyan {
+  background: linear-gradient(90deg, var(--cyan), var(--cyan-dim));
+}
+
+.ga-stat-box-bar--amber {
+  background: linear-gradient(90deg, var(--amber), #e65c00);
+}
+
+.ga-stat-box-bar--hot {
+  background: linear-gradient(90deg, var(--hot), var(--amber));
+}
 
 .ga-stat-num {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 6px;
 }
 
-.ga-stat-num--cyan  { color: var(--cyan); }
-.ga-stat-num--amber { color: var(--amber); }
-.ga-stat-num--hot   { color: var(--hot); }
+.ga-stat-num--cyan {
+  color: var(--cyan);
+}
+
+.ga-stat-num--amber {
+  color: var(--amber);
+}
+
+.ga-stat-num--hot {
+  color: var(--hot);
+}
 
 .ga-stat-label {
   font-size: 0.72rem;
@@ -165,7 +192,7 @@
 }
 
 .ga-learn-num {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.88rem;
   font-weight: 700;
   color: var(--cyan);
@@ -180,7 +207,7 @@
 
 
 .ga-learn-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.97rem;
   font-weight: 700;
   color: var(--white);
@@ -306,7 +333,7 @@
   width: 40px;
   height: 40px;
   border-radius: 9px;
-  background: linear-gradient(135deg, rgba(255,171,0,0.14), rgba(255,171,0,0.04));
+  background: linear-gradient(135deg, rgba(255, 171, 0, 0.14), rgba(255, 171, 0, 0.04));
   border: 1px solid rgba(255, 171, 0, 0.2);
   display: flex;
   align-items: center;
@@ -316,7 +343,7 @@
 }
 
 .ga-feature-content h4 {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--white);
@@ -355,19 +382,37 @@
   box-shadow: 0 20px 56px rgba(0, 0, 0, 0.42);
 }
 
-.ga-campaign-card--cyan:hover   { border-color: rgba(0, 229, 255, 0.35); }
-.ga-campaign-card--amber:hover  { border-color: rgba(255, 171, 0, 0.35); }
-.ga-campaign-card--hot:hover    { border-color: rgba(255, 109, 0, 0.35); }
+.ga-campaign-card--cyan:hover {
+  border-color: rgba(0, 229, 255, 0.35);
+}
+
+.ga-campaign-card--amber:hover {
+  border-color: rgba(255, 171, 0, 0.35);
+}
+
+.ga-campaign-card--hot:hover {
+  border-color: rgba(255, 109, 0, 0.35);
+}
 
 .ga-campaign-bar {
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 3px;
 }
 
-.ga-campaign-bar--cyan  { background: linear-gradient(90deg, var(--cyan), var(--cyan-dim)); }
-.ga-campaign-bar--amber { background: linear-gradient(90deg, var(--amber), #e65c00); }
-.ga-campaign-bar--hot   { background: linear-gradient(90deg, var(--hot), var(--amber)); }
+.ga-campaign-bar--cyan {
+  background: linear-gradient(90deg, var(--cyan), var(--cyan-dim));
+}
+
+.ga-campaign-bar--amber {
+  background: linear-gradient(90deg, var(--amber), #e65c00);
+}
+
+.ga-campaign-bar--hot {
+  background: linear-gradient(90deg, var(--hot), var(--amber));
+}
 
 .ga-campaign-icon {
   font-size: 2rem;
@@ -376,16 +421,24 @@
 }
 
 .ga-campaign-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.3px;
   margin-bottom: 10px;
 }
 
-.ga-campaign-title--cyan  { color: var(--cyan); }
-.ga-campaign-title--amber { color: var(--amber); }
-.ga-campaign-title--hot   { color: var(--hot); }
+.ga-campaign-title--cyan {
+  color: var(--cyan);
+}
+
+.ga-campaign-title--amber {
+  color: var(--amber);
+}
+
+.ga-campaign-title--hot {
+  color: var(--hot);
+}
 
 .ga-campaign-desc {
   color: var(--muted);
@@ -492,7 +545,7 @@
 
 .ga-career-pay {
   margin-left: auto;
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   color: var(--amber);
   font-weight: 700;
@@ -554,7 +607,7 @@
 }
 
 .ga-cert-headline {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.3rem, 2.5vw, 1.9rem);
   font-weight: 700;
   letter-spacing: -0.8px;
@@ -607,7 +660,7 @@
 .ga-cta-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 65% 55% at 50% 50%, rgba(255,171,0,0.05), transparent);
+  background: radial-gradient(ellipse 65% 55% at 50% 50%, rgba(255, 171, 0, 0.05), transparent);
   pointer-events: none;
 }
 
@@ -624,7 +677,7 @@
 }
 
 .ga-cta-title {
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: clamp(1.9rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -1.5px;
@@ -655,15 +708,33 @@
    Stagger delay classes
 ════════════════════════════════════════════════════════════ */
 
-.ga-delay-0 { transition-delay: 0ms; }
-.ga-delay-1 { transition-delay: 70ms; }
-.ga-delay-2 { transition-delay: 140ms; }
-.ga-delay-3 { transition-delay: 210ms; }
-.ga-delay-4 { transition-delay: 280ms; }
-.ga-delay-5 { transition-delay: 350ms; }
+.ga-delay-0 {
+  transition-delay: 0ms;
+}
+
+.ga-delay-1 {
+  transition-delay: 70ms;
+}
+
+.ga-delay-2 {
+  transition-delay: 140ms;
+}
+
+.ga-delay-3 {
+  transition-delay: 210ms;
+}
+
+.ga-delay-4 {
+  transition-delay: 280ms;
+}
+
+.ga-delay-5 {
+  transition-delay: 350ms;
+}
 
 /* ── Responsive ── */
 @media (max-width: 960px) {
+
   .ga-intro-layout,
   .ga-features-layout,
   .ga-outcomes-layout {
