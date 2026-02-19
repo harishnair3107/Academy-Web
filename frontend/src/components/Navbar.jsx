@@ -38,7 +38,7 @@ export default function Navbar() {
     { label: "About Us", path: "/about" },
     { label: "Testimonials", path: "/testimonials" },
     { label: "Contact", path: "/contact" },
-    { label:"CSR", path:"/"}
+    { label:"CSR", path:"/CSR"}
   ];
 
   const isCourseActive = COURSES_DATA.some(

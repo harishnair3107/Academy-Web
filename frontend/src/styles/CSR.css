@@ -1,0 +1,680 @@
+/* ═══════════════════════════════════════════════════════════════
+   CSR.css — Corporate Social Responsibility page
+   All classes prefixed .csr- to avoid global conflicts
+═══════════════════════════════════════════════════════════════ */
+
+/* ── Section wrappers ── */
+.csr-section {
+  padding: 96px 5%;
+}
+
+.csr-section--dark {
+  background: var(--navy);
+  border-top: 1px solid var(--border);
+}
+
+.csr-section--mid {
+  background: var(--navy-mid);
+  border-top: 1px solid var(--border);
+}
+
+.csr-section--teal {
+  background: linear-gradient(180deg, var(--navy) 0%, rgba(20, 184, 166, 0.03) 100%);
+  border-top: 1px solid var(--border);
+}
+
+/* ════════════════════════════════════════════════════════════
+   HERO SECTION
+════════════════════════════════════════════════════════════ */
+
+.csr-hero {
+  padding: 120px 5% 40px;
+  background: var(--navy);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.csr-hero-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.csr-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(20, 184, 166, 0.08), transparent);
+  pointer-events: none;
+}
+
+.csr-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.csr-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.csr-hero-title {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.csr-hero-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.75;
+}
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 1 — Who We Are
+════════════════════════════════════════════════════════════ */
+
+.csr-about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.csr-about-body p {
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+
+.csr-about-body strong {
+  color: var(--white);
+}
+
+.csr-about-callout {
+  background: rgba(20, 184, 166, 0.08);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  border-left: 3px solid #14b8a6;
+  border-radius: 0 12px 12px 0;
+  padding: 20px 22px;
+  margin-top: 24px;
+}
+
+.csr-about-callout p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.72;
+  margin: 0;
+}
+
+.csr-about-callout strong {
+  color: #14b8a6;
+}
+
+.csr-mission-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.csr-mission-card {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.csr-mission-card:hover {
+  border-color: rgba(20, 184, 166, 0.3);
+  transform: translateX(5px);
+}
+
+.csr-mission-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(20, 184, 166, 0.12);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.csr-mission-text {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 2 — College Tie-Ups
+════════════════════════════════════════════════════════════ */
+
+.csr-colleges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.csr-college-card {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: border-color 0.22s, transform 0.22s, box-shadow 0.22s;
+}
+
+.csr-college-card:hover {
+  border-color: rgba(0, 229, 255, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.csr-college-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.csr-college-name {
+  font-family: "Inter", sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.4;
+}
+
+.csr-college-location {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 3 — Training Program Gallery
+════════════════════════════════════════════════════════════ */
+
+.csr-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.csr-gallery-item {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+
+.csr-gallery-item:hover {
+  transform: scale(1.02);
+  border-color: rgba(255, 171, 0, 0.3);
+  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.4);
+}
+
+.csr-gallery-media {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  background: var(--navy);
+}
+
+.csr-gallery-caption {
+  padding: 18px 20px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 4 — Achievements
+════════════════════════════════════════════════════════════ */
+
+.csr-achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Reusing InfoCard component for achievements */
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 5 — Funding Tiers Table
+════════════════════════════════════════════════════════════ */
+
+.csr-funding-intro {
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.82;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.csr-funding-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.csr-funding-tier {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.28s, border-color 0.28s, box-shadow 0.28s;
+}
+
+.csr-funding-tier:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+}
+
+.csr-funding-tier--bronze:hover {
+  border-color: rgba(205, 127, 50, 0.4);
+}
+
+.csr-funding-tier--silver:hover {
+  border-color: rgba(192, 192, 192, 0.4);
+}
+
+.csr-funding-tier--gold:hover {
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.csr-funding-tier--platinum:hover {
+  border-color: rgba(229, 228, 226, 0.4);
+}
+
+.csr-funding-tier-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+.csr-funding-tier-bar--bronze {
+  background: linear-gradient(90deg, #cd7f32, #b8860b);
+}
+
+.csr-funding-tier-bar--silver {
+  background: linear-gradient(90deg, #c0c0c0, #a9a9a9);
+}
+
+.csr-funding-tier-bar--gold {
+  background: linear-gradient(90deg, #ffd700, #ffab00);
+}
+
+.csr-funding-tier-bar--platinum {
+  background: linear-gradient(90deg, #e5e4e2, #00e5ff);
+}
+
+.csr-funding-tier-name {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.csr-funding-tier-name--bronze {
+  color: #cd7f32;
+}
+
+.csr-funding-tier-name--silver {
+  color: #c0c0c0;
+}
+
+.csr-funding-tier-name--gold {
+  color: #ffd700;
+}
+
+.csr-funding-tier-name--platinum {
+  color: #e5e4e2;
+}
+
+.csr-funding-tier-amount {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.csr-funding-tier-desc {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.68;
+  margin-bottom: 24px;
+}
+
+.csr-funding-tier-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.csr-funding-tier-benefits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.csr-funding-tier-benefits li::before {
+  content: "✓";
+  color: #14b8a6;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 6 — Contact for Payment
+════════════════════════════════════════════════════════════ */
+
+.csr-contact-intro {
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.82;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.csr-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.csr-contact-card {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  transition: border-color 0.22s, transform 0.22s;
+}
+
+.csr-contact-card:hover {
+  border-color: rgba(0, 229, 255, 0.3);
+  transform: translateY(-4px);
+}
+
+.csr-contact-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: rgba(0, 229, 255, 0.1);
+  border: 1px solid rgba(0, 229, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 16px;
+}
+
+.csr-contact-label {
+  font-family: "Inter", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--cyan);
+  margin-bottom: 8px;
+}
+
+.csr-contact-value {
+  font-size: 0.95rem;
+  color: var(--white);
+  word-break: break-word;
+}
+
+.csr-contact-value a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.csr-contact-value a:hover {
+  color: var(--cyan);
+}
+
+/* ════════════════════════════════════════════════════════════
+   SECTION 7 — Skill India Alignment
+════════════════════════════════════════════════════════════ */
+
+.csr-skill-india {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.05) 0%, rgba(0, 128, 0, 0.05) 100%);
+  border: 2px solid rgba(255, 153, 0, 0.15);
+  border-radius: 20px;
+  padding: 48px;
+}
+
+.csr-skill-india-head {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.csr-skill-india-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 18px;
+  border-radius: 100px;
+  background: rgba(255, 153, 0, 0.1);
+  border: 1px solid rgba(255, 153, 0, 0.25);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ff9900;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.csr-skill-india-title {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  margin-bottom: 14px;
+  line-height: 1.25;
+}
+
+.csr-skill-india-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.78;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.csr-skill-india-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.csr-skill-india-pillar {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  transition: border-color 0.22s, transform 0.22s;
+}
+
+.csr-skill-india-pillar:hover {
+  border-color: rgba(255, 153, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+.csr-skill-india-pillar-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.csr-skill-india-pillar-name {
+  font-family: "Inter", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.2px;
+}
+
+/* ════════════════════════════════════════════════════════════
+   CTA Section
+════════════════════════════════════════════════════════════ */
+
+.csr-cta-section {
+  padding: 110px 5%;
+  background: var(--navy);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.csr-cta-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 65% 55% at 50% 50%, rgba(20, 184, 166, 0.06), transparent);
+  pointer-events: none;
+}
+
+.csr-cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.csr-cta-title {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.csr-cta-sub {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.77;
+}
+
+.csr-cta-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.csr-tel-link {
+  text-decoration: none;
+}
+
+/* ════════════════════════════════════════════════════════════
+   Stagger delay classes
+════════════════════════════════════════════════════════════ */
+
+.csr-delay-0 {
+  transition-delay: 0ms;
+}
+
+.csr-delay-1 {
+  transition-delay: 80ms;
+}
+
+.csr-delay-2 {
+  transition-delay: 160ms;
+}
+
+.csr-delay-3 {
+  transition-delay: 240ms;
+}
+
+.csr-delay-4 {
+  transition-delay: 320ms;
+}
+
+.csr-delay-5 {
+  transition-delay: 400ms;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .csr-about-layout {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .csr-skill-india {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .csr-section {
+    padding: 72px 5%;
+  }
+
+  .csr-hero {
+    padding: 90px 5% 72px;
+  }
+
+  .csr-colleges-grid,
+  .csr-gallery-grid,
+  .csr-achievements-grid,
+  .csr-funding-tiers,
+  .csr-contact-grid,
+  .csr-skill-india-pillars {
+    grid-template-columns: 1fr;
+  }
+}

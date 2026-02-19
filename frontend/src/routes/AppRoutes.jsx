@@ -13,6 +13,7 @@ import GoogleAdsPage from "../pages/Googleads";
 import SEOPage from "../pages/Seo";
 import SMMPage from "../pages/Smm";
 import WordpressPage from "../pages/Wordpress";
+import CSRPage from "../pages/Csr";
 export default function AppRoutes() {
   return (
     
@@ -23,6 +24,7 @@ export default function AppRoutes() {
   <Route path="/courses/:id" element={<CourseDetailPage />} />
   <Route path="/testimonials" element={<TestimonialsPage />} />
   <Route path="/contact" element={<ContactPage />} />
+  <Route path="/CSR" element={<CSRPage />} />
   <Route path="/admission" element={<AdmissionPage />} />
   <Route path="/privacy" element={<PrivacyPage />} />
   <Route path="/app-development" element={<AppDevelopmentPage />} />
